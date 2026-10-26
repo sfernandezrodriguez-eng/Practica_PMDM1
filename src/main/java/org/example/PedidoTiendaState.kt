@@ -89,7 +89,7 @@ sealed interface PedidoTiendaState {
 
     data class Cancelado(val type: String) : PedidoTiendaState {
         fun onEnter(){
-            println("A fallado algo, motivo: "+ String)
+            println("Ha fallado algo, motivo: $type")
             currentState = Carrito
 
         }
